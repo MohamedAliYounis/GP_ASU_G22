@@ -1,0 +1,80 @@
+Wed Jun 08 13:55:22 UTC 2022 - Executing "/openlane/scripts/mergeLef.py -i /home/younis/home/younis/caravel_tutorial/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef /home/younis/home/younis/caravel_tutorial/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef -o /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/tmp/merged_unpadded.lef |& tee >&@stdout"
+
+Wed Jun 08 13:55:22 UTC 2022 - Executing "openroad -python /openlane/scripts/mergeLib.py --output /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/tmp/synthesis/merged.lib --name sky130A_merged /home/younis/home/younis/caravel_tutorial/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Wed Jun 08 13:55:23 UTC 2022 - Executing "openroad -python /openlane/scripts/libtrim.py --cell-file /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/tmp/synthesis/trimmed.lib.exclude.list --output /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/tmp/synthesis/trimmed.lib /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/tmp/synthesis/merged.lib"
+
+Wed Jun 08 13:55:23 UTC 2022 - Executing "echo {openlane 2022.02.23_02.50.41} > /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/OPENLANE_VERSION"
+
+Wed Jun 08 13:55:23 UTC 2022 - Executing "openroad -python /openlane/scripts/new_tracks.py -i /home/younis/home/younis/caravel_tutorial/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tracks.info -o /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/tmp/routing/config.tracks"
+
+Wed Jun 08 13:55:24 UTC 2022 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /home/younis/home/younis/caravel_tutorial/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/tmp/synthesis/1-sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Wed Jun 08 13:55:24 UTC 2022 - Executing "yosys -c /openlane/scripts/yosys/synth.tcl -l /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/logs/synthesis/1-synthesis.log |& tee >&@stdout"
+
+Wed Jun 08 13:55:54 UTC 2022 - Executing "openroad -python /openlane/scripts/generate_reports.py -d /home/younis/caravel_tutorial/caravel_example/openlane/core --design_name core --tag core --output_file /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/reports/final_summary_report.csv --man_report /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/reports/manufacturability_report.rpt --run_path /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core"
+
+Wed Jun 08 13:56:15 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/younis\/caravel_tutorial\/caravel_example\/openlane\/core\/runs\/core\/results\/synthesis\/core.v/} /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/config.tcl"
+
+Wed Jun 08 13:56:15 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 0/} /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/config.tcl"
+
+Wed Jun 08 13:56:15 UTC 2022 - Executing "sed -i /defparam/d /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/results/synthesis/core.v"
+
+Wed Jun 08 13:56:15 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/sta.tcl"
+
+Wed Jun 08 13:56:16 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/floorplan.tcl"
+
+Wed Jun 08 13:56:17 UTC 2022 - Executing "openroad -python /openlane/scripts/defutil.py extract_core_dims --output-data /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/tmp/dimensions.txt --input-lef /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/tmp/merged.lef /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/tmp/floorplan/3-initial_fp.def"
+
+Wed Jun 08 13:56:17 UTC 2022 - Executing "openroad -python /openlane/scripts/io_place.py --input-lef /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/tmp/merged.lef --config /home/younis/caravel_tutorial/caravel_example/openlane/core/pin_order.cfg --hor-layer met3 --ver-layer met2 --ver-width-mult 2 --hor-width-mult 2 --hor-extension -1 --ver-extension -1 --length 4 -o /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/tmp/floorplan/4-io.def /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/tmp/floorplan/3-initial_fp.def |& tee /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/logs/floorplan/4-place_io_ol.log >&@stdout"
+
+Wed Jun 08 13:56:18 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/tapcell.tcl"
+
+Wed Jun 08 13:56:19 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/pdn.tcl"
+
+Wed Jun 08 13:56:25 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/replace.tcl"
+
+Wed Jun 08 13:56:28 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/resizer.tcl"
+
+Wed Jun 08 13:56:33 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl"
+
+Wed Jun 08 13:56:33 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/younis\/caravel_tutorial\/caravel_example\/openlane\/core\/runs\/core\/results\/placement\/core.resized.v/} /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/config.tcl"
+
+Wed Jun 08 13:56:33 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/younis\/caravel_tutorial\/caravel_example\/openlane\/core\/runs\/core\/results\/synthesis\/core.v/} /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/config.tcl"
+
+Wed Jun 08 13:56:33 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/opendp.tcl"
+
+Wed Jun 08 13:56:35 UTC 2022 - Executing "openroad -python /openlane/scripts/libtrim.py --cell-file /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/tmp/cts/cts.lib.exclude.list --output /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/tmp/cts/cts.lib /home/younis/home/younis/caravel_tutorial/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+
+Wed Jun 08 13:56:35 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/cts.tcl"
+
+Wed Jun 08 13:57:35 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl"
+
+Wed Jun 08 13:57:36 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/younis\/caravel_tutorial\/caravel_example\/openlane\/core\/runs\/core\/results\/cts\/core.v/} /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/config.tcl"
+
+Wed Jun 08 13:57:36 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/younis\/caravel_tutorial\/caravel_example\/openlane\/core\/runs\/core\/results\/placement\/core.resized.v/} /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/config.tcl"
+
+Wed Jun 08 13:57:36 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/resizer_timing.tcl"
+
+Wed Jun 08 13:57:40 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl"
+
+Wed Jun 08 13:57:41 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/younis\/caravel_tutorial\/caravel_example\/openlane\/core\/runs\/core\/results\/cts\/core.resized.v/} /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/config.tcl"
+
+Wed Jun 08 13:57:41 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/younis\/caravel_tutorial\/caravel_example\/openlane\/core\/runs\/core\/results\/cts\/core.v/} /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/config.tcl"
+
+Wed Jun 08 13:57:41 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/diodes.tcl"
+
+Wed Jun 08 13:57:44 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/write_verilog.tcl"
+
+Wed Jun 08 13:57:45 UTC 2022 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/home\/younis\/caravel_tutorial\/caravel_example\/openlane\/core\/runs\/core\/results\/synthesis\/core_diodes.v/} /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/config.tcl"
+
+Wed Jun 08 13:57:45 UTC 2022 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/home\/younis\/caravel_tutorial\/caravel_example\/openlane\/core\/runs\/core\/results\/cts\/core.resized.v/} /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/config.tcl"
+
+Wed Jun 08 13:57:45 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/opendp.tcl"
+
+Wed Jun 08 13:57:46 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/fill.tcl"
+
+Wed Jun 08 13:57:49 UTC 2022 - Executing "openroad -exit /openlane/scripts/openroad/groute.tcl"
+
+Wed Jun 08 13:59:41 UTC 2022 - Executing "openroad -python /openlane/scripts/generate_reports.py -d /home/younis/caravel_tutorial/caravel_example/openlane/core --design_name core --tag core --output_file /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/reports/final_summary_report.csv --man_report /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/reports/manufacturability_report.rpt --run_path /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core"
+

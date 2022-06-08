@@ -1,0 +1,64 @@
+- status: 0 - openlane design prep
+  runtime_s: 3.317
+  runtime_ts: 0h0m3s317ms
+- status: 1 - synthesis - yosys
+  runtime_s: 50.673
+  runtime_ts: 0h0m50s673ms
+- status: 2 - sta - openroad
+  runtime_s: 0.884
+  runtime_ts: 0h0m0s884ms
+- status: 3 - floorplan initialization - openroad
+  runtime_s: 0.751
+  runtime_ts: 0h0m0s751ms
+- status: 4 - ioplace - io_place.py
+  runtime_s: 0.438
+  runtime_ts: 0h0m0s438ms
+- status: 5 - tap/decap insertion - openroad
+  runtime_s: 0.586
+  runtime_ts: 0h0m0s586ms
+- status: 6 - pdn generation - openroad
+  runtime_s: 6.251
+  runtime_ts: 0h0m6s251ms
+- status: 7 - global placement - openroad
+  runtime_s: 2.271
+  runtime_ts: 0h0m2s270ms
+- status: 8 - resizer design optimizations - openroad
+  runtime_s: 4.785
+  runtime_ts: 0h0m4s785ms
+- status: 9 - write verilog - openroad
+  runtime_s: 0.679
+  runtime_ts: 0h0m0s679ms
+- status: 10 - detailed placement - openroad
+  runtime_s: 1.002
+  runtime_ts: 0h0m1s2ms
+- status: 11 - cts
+  runtime_s: 60.362
+  runtime_ts: 0h1m0s362ms
+- status: 12 - write verilog - openroad
+  runtime_s: 0.63
+  runtime_ts: 0h0m0s630ms
+- status: 13 - resizer timing optimizations - openroad
+  runtime_s: 4.067
+  runtime_ts: 0h0m4s67ms
+- status: 14 - write verilog - openroad
+  runtime_s: 0.655
+  runtime_ts: 0h0m0s655ms
+- status: 16 - write verilog - openroad
+  runtime_s: 0.65
+  runtime_ts: 0h0m0s650ms
+- status: 16 - diode insertion - openroad
+  runtime_s: 0.849
+  runtime_ts: 0h0m0s849ms
+- status: 17 - detailed placement - openroad
+  runtime_s: 1.079
+  runtime_ts: 0h0m1s78ms
+- status: 18 - fill insertion - openroad
+  runtime_s: 2.5140000000000002
+  runtime_ts: 0h0m2s514ms
+---
+- status: routed
+  runtime_s: -1
+  runtime_ts: '-1'
+- status: flow failed
+  runtime_s: 261.0
+  runtime_ts: 0h4m21s0ms

@@ -1,0 +1,20 @@
+OpenROAD 8d53e9b018dec98fa63e907ddeb6c5406f035361 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/tmp/merged_unpadded.lef
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 441 library cells
+[INFO ODB-0226] Finished LEF file:  /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/tmp/merged_unpadded.lef
+[INFO ODB-0127] Reading DEF file: /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/tmp/floorplan/4-io.def
+[INFO ODB-0128] Design: core
+[INFO ODB-0130]     Created 252 pins.
+[INFO ODB-0131]     Created 795 components and 5835 component-terminals.
+[INFO ODB-0133]     Created 933 nets and 2577 connections.
+[INFO ODB-0134] Finished DEF file: /home/younis/caravel_tutorial/caravel_example/openlane/core/runs/core/tmp/floorplan/4-io.def
+[WARNING TAP-0014] endcap_cpp option is deprecated.
+[INFO TAP-0001] Found 0 macro blocks.
+[INFO TAP-0002] Original rows: 543
+[INFO TAP-0003] Created 0 rows for a total of 543 rows.
+[INFO TAP-0004] Inserted 1086 endcaps.
+[INFO TAP-0005] Inserted 31337 tapcells.

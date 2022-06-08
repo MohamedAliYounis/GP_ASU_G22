@@ -1,0 +1,2527 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO core
+  CLASS BLOCK ;
+  FOREIGN core ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 2000.000 BY 2000.000 ;
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 18.950 1996.000 19.230 2000.000 ;
+    END
+  END clk
+  PIN external_interrupt
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 15.000 2000.000 15.600 ;
+    END
+  END external_interrupt
+  PIN l15_transducer_ack
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 45.600 2000.000 46.200 ;
+    END
+  END l15_transducer_ack
+  PIN l15_transducer_data_0[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 41.950 0.000 42.230 4.000 ;
+    END
+  END l15_transducer_data_0[0]
+  PIN l15_transducer_data_0[10]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 352.960 2000.000 353.560 ;
+    END
+  END l15_transducer_data_0[10]
+  PIN l15_transducer_data_0[11]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 595.790 1996.000 596.070 2000.000 ;
+    END
+  END l15_transducer_data_0[11]
+  PIN l15_transducer_data_0[12]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 520.810 0.000 521.090 4.000 ;
+    END
+  END l15_transducer_data_0[12]
+  PIN l15_transducer_data_0[13]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 639.920 4.000 640.520 ;
+    END
+  END l15_transducer_data_0[13]
+  PIN l15_transducer_data_0[14]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 671.200 4.000 671.800 ;
+    END
+  END l15_transducer_data_0[14]
+  PIN l15_transducer_data_0[15]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 689.630 0.000 689.910 4.000 ;
+    END
+  END l15_transducer_data_0[15]
+  PIN l15_transducer_data_0[16]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 701.800 4.000 702.400 ;
+    END
+  END l15_transducer_data_0[16]
+  PIN l15_transducer_data_0[17]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 795.640 4.000 796.240 ;
+    END
+  END l15_transducer_data_0[17]
+  PIN l15_transducer_data_0[18]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 746.210 0.000 746.490 4.000 ;
+    END
+  END l15_transducer_data_0[18]
+  PIN l15_transducer_data_0[19]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 889.480 4.000 890.080 ;
+    END
+  END l15_transducer_data_0[19]
+  PIN l15_transducer_data_0[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 106.800 2000.000 107.400 ;
+    END
+  END l15_transducer_data_0[1]
+  PIN l15_transducer_data_0[20]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 752.800 2000.000 753.400 ;
+    END
+  END l15_transducer_data_0[20]
+  PIN l15_transducer_data_0[21]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 952.040 4.000 952.640 ;
+    END
+  END l15_transducer_data_0[21]
+  PIN l15_transducer_data_0[22]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1014.600 4.000 1015.200 ;
+    END
+  END l15_transducer_data_0[22]
+  PIN l15_transducer_data_0[23]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1077.160 4.000 1077.760 ;
+    END
+  END l15_transducer_data_0[23]
+  PIN l15_transducer_data_0[24]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1139.720 4.000 1140.320 ;
+    END
+  END l15_transducer_data_0[24]
+  PIN l15_transducer_data_0[25]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1202.280 4.000 1202.880 ;
+    END
+  END l15_transducer_data_0[25]
+  PIN l15_transducer_data_0[26]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 998.960 2000.000 999.560 ;
+    END
+  END l15_transducer_data_0[26]
+  PIN l15_transducer_data_0[27]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1060.840 2000.000 1061.440 ;
+    END
+  END l15_transducer_data_0[27]
+  PIN l15_transducer_data_0[28]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 903.530 1996.000 903.810 2000.000 ;
+    END
+  END l15_transducer_data_0[28]
+  PIN l15_transducer_data_0[29]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 971.610 0.000 971.890 4.000 ;
+    END
+  END l15_transducer_data_0[29]
+  PIN l15_transducer_data_0[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 202.000 4.000 202.600 ;
+    END
+  END l15_transducer_data_0[2]
+  PIN l15_transducer_data_0[30]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1018.990 1996.000 1019.270 2000.000 ;
+    END
+  END l15_transducer_data_0[30]
+  PIN l15_transducer_data_0[31]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1055.790 0.000 1056.070 4.000 ;
+    END
+  END l15_transducer_data_0[31]
+  PIN l15_transducer_data_0[32]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1327.400 4.000 1328.000 ;
+    END
+  END l15_transducer_data_0[32]
+  PIN l15_transducer_data_0[33]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1245.120 2000.000 1245.720 ;
+    END
+  END l15_transducer_data_0[33]
+  PIN l15_transducer_data_0[34]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1389.280 4.000 1389.880 ;
+    END
+  END l15_transducer_data_0[34]
+  PIN l15_transducer_data_0[35]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1420.560 4.000 1421.160 ;
+    END
+  END l15_transducer_data_0[35]
+  PIN l15_transducer_data_0[36]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1307.000 2000.000 1307.600 ;
+    END
+  END l15_transducer_data_0[36]
+  PIN l15_transducer_data_0[37]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1576.960 4.000 1577.560 ;
+    END
+  END l15_transducer_data_0[37]
+  PIN l15_transducer_data_0[38]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1430.080 2000.000 1430.680 ;
+    END
+  END l15_transducer_data_0[38]
+  PIN l15_transducer_data_0[39]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1225.070 0.000 1225.350 4.000 ;
+    END
+  END l15_transducer_data_0[39]
+  PIN l15_transducer_data_0[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 249.410 1996.000 249.690 2000.000 ;
+    END
+  END l15_transducer_data_0[3]
+  PIN l15_transducer_data_0[40]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1491.280 2000.000 1491.880 ;
+    END
+  END l15_transducer_data_0[40]
+  PIN l15_transducer_data_0[41]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1702.080 4.000 1702.680 ;
+    END
+  END l15_transducer_data_0[41]
+  PIN l15_transducer_data_0[42]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1309.710 0.000 1309.990 4.000 ;
+    END
+  END l15_transducer_data_0[42]
+  PIN l15_transducer_data_0[43]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1553.160 2000.000 1553.760 ;
+    END
+  END l15_transducer_data_0[43]
+  PIN l15_transducer_data_0[44]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1393.890 0.000 1394.170 4.000 ;
+    END
+  END l15_transducer_data_0[44]
+  PIN l15_transducer_data_0[45]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1764.640 4.000 1765.240 ;
+    END
+  END l15_transducer_data_0[45]
+  PIN l15_transducer_data_0[46]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1421.950 0.000 1422.230 4.000 ;
+    END
+  END l15_transducer_data_0[46]
+  PIN l15_transducer_data_0[47]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1450.470 0.000 1450.750 4.000 ;
+    END
+  END l15_transducer_data_0[47]
+  PIN l15_transducer_data_0[48]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1480.370 1996.000 1480.650 2000.000 ;
+    END
+  END l15_transducer_data_0[48]
+  PIN l15_transducer_data_0[49]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1519.010 1996.000 1519.290 2000.000 ;
+    END
+  END l15_transducer_data_0[49]
+  PIN l15_transducer_data_0[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 364.870 1996.000 365.150 2000.000 ;
+    END
+  END l15_transducer_data_0[4]
+  PIN l15_transducer_data_0[50]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1563.170 0.000 1563.450 4.000 ;
+    END
+  END l15_transducer_data_0[50]
+  PIN l15_transducer_data_0[51]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1591.230 0.000 1591.510 4.000 ;
+    END
+  END l15_transducer_data_0[51]
+  PIN l15_transducer_data_0[52]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1711.290 1996.000 1711.570 2000.000 ;
+    END
+  END l15_transducer_data_0[52]
+  PIN l15_transducer_data_0[53]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1619.290 0.000 1619.570 4.000 ;
+    END
+  END l15_transducer_data_0[53]
+  PIN l15_transducer_data_0[54]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1889.760 4.000 1890.360 ;
+    END
+  END l15_transducer_data_0[54]
+  PIN l15_transducer_data_0[55]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1703.930 0.000 1704.210 4.000 ;
+    END
+  END l15_transducer_data_0[55]
+  PIN l15_transducer_data_0[56]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1760.050 0.000 1760.330 4.000 ;
+    END
+  END l15_transducer_data_0[56]
+  PIN l15_transducer_data_0[57]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1816.630 0.000 1816.910 4.000 ;
+    END
+  END l15_transducer_data_0[57]
+  PIN l15_transducer_data_0[58]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1829.920 2000.000 1830.520 ;
+    END
+  END l15_transducer_data_0[58]
+  PIN l15_transducer_data_0[59]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1826.290 1996.000 1826.570 2000.000 ;
+    END
+  END l15_transducer_data_0[59]
+  PIN l15_transducer_data_0[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 380.050 0.000 380.330 4.000 ;
+    END
+  END l15_transducer_data_0[5]
+  PIN l15_transducer_data_0[60]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1941.750 1996.000 1942.030 2000.000 ;
+    END
+  END l15_transducer_data_0[60]
+  PIN l15_transducer_data_0[61]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1901.270 0.000 1901.550 4.000 ;
+    END
+  END l15_transducer_data_0[61]
+  PIN l15_transducer_data_0[62]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1860.520 2000.000 1861.120 ;
+    END
+  END l15_transducer_data_0[62]
+  PIN l15_transducer_data_0[63]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1985.450 0.000 1985.730 4.000 ;
+    END
+  END l15_transducer_data_0[63]
+  PIN l15_transducer_data_0[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 441.690 1996.000 441.970 2000.000 ;
+    END
+  END l15_transducer_data_0[6]
+  PIN l15_transducer_data_0[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 452.240 4.000 452.840 ;
+    END
+  END l15_transducer_data_0[7]
+  PIN l15_transducer_data_0[8]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 480.330 1996.000 480.610 2000.000 ;
+    END
+  END l15_transducer_data_0[8]
+  PIN l15_transducer_data_0[9]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 518.970 1996.000 519.250 2000.000 ;
+    END
+  END l15_transducer_data_0[9]
+  PIN l15_transducer_data_1[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 108.160 4.000 108.760 ;
+    END
+  END l15_transducer_data_1[0]
+  PIN l15_transducer_data_1[10]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 608.640 4.000 609.240 ;
+    END
+  END l15_transducer_data_1[10]
+  PIN l15_transducer_data_1[11]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 492.750 0.000 493.030 4.000 ;
+    END
+  END l15_transducer_data_1[11]
+  PIN l15_transducer_data_1[12]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 548.870 0.000 549.150 4.000 ;
+    END
+  END l15_transducer_data_1[12]
+  PIN l15_transducer_data_1[13]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 576.930 0.000 577.210 4.000 ;
+    END
+  END l15_transducer_data_1[13]
+  PIN l15_transducer_data_1[14]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 506.640 2000.000 507.240 ;
+    END
+  END l15_transducer_data_1[14]
+  PIN l15_transducer_data_1[15]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 717.690 0.000 717.970 4.000 ;
+    END
+  END l15_transducer_data_1[15]
+  PIN l15_transducer_data_1[16]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 733.080 4.000 733.680 ;
+    END
+  END l15_transducer_data_1[16]
+  PIN l15_transducer_data_1[17]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 633.970 1996.000 634.250 2000.000 ;
+    END
+  END l15_transducer_data_1[17]
+  PIN l15_transducer_data_1[18]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 711.250 1996.000 711.530 2000.000 ;
+    END
+  END l15_transducer_data_1[18]
+  PIN l15_transducer_data_1[19]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 691.600 2000.000 692.200 ;
+    END
+  END l15_transducer_data_1[19]
+  PIN l15_transducer_data_1[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 126.130 0.000 126.410 4.000 ;
+    END
+  END l15_transducer_data_1[1]
+  PIN l15_transducer_data_1[20]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 920.760 4.000 921.360 ;
+    END
+  END l15_transducer_data_1[20]
+  PIN l15_transducer_data_1[21]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 845.280 2000.000 845.880 ;
+    END
+  END l15_transducer_data_1[21]
+  PIN l15_transducer_data_1[22]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 774.270 0.000 774.550 4.000 ;
+    END
+  END l15_transducer_data_1[22]
+  PIN l15_transducer_data_1[23]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1108.440 4.000 1109.040 ;
+    END
+  END l15_transducer_data_1[23]
+  PIN l15_transducer_data_1[24]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1171.000 4.000 1171.600 ;
+    END
+  END l15_transducer_data_1[24]
+  PIN l15_transducer_data_1[25]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 830.390 0.000 830.670 4.000 ;
+    END
+  END l15_transducer_data_1[25]
+  PIN l15_transducer_data_1[26]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 886.970 0.000 887.250 4.000 ;
+    END
+  END l15_transducer_data_1[26]
+  PIN l15_transducer_data_1[27]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 864.890 1996.000 865.170 2000.000 ;
+    END
+  END l15_transducer_data_1[27]
+  PIN l15_transducer_data_1[28]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 943.090 0.000 943.370 4.000 ;
+    END
+  END l15_transducer_data_1[28]
+  PIN l15_transducer_data_1[29]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 999.670 0.000 999.950 4.000 ;
+    END
+  END l15_transducer_data_1[29]
+  PIN l15_transducer_data_1[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 210.770 0.000 211.050 4.000 ;
+    END
+  END l15_transducer_data_1[2]
+  PIN l15_transducer_data_1[30]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1057.170 1996.000 1057.450 2000.000 ;
+    END
+  END l15_transducer_data_1[30]
+  PIN l15_transducer_data_1[31]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1296.120 4.000 1296.720 ;
+    END
+  END l15_transducer_data_1[31]
+  PIN l15_transducer_data_1[32]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1358.000 4.000 1358.600 ;
+    END
+  END l15_transducer_data_1[32]
+  PIN l15_transducer_data_1[33]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1133.990 1996.000 1134.270 2000.000 ;
+    END
+  END l15_transducer_data_1[33]
+  PIN l15_transducer_data_1[34]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1172.630 1996.000 1172.910 2000.000 ;
+    END
+  END l15_transducer_data_1[34]
+  PIN l15_transducer_data_1[35]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1451.840 4.000 1452.440 ;
+    END
+  END l15_transducer_data_1[35]
+  PIN l15_transducer_data_1[36]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1514.400 4.000 1515.000 ;
+    END
+  END l15_transducer_data_1[36]
+  PIN l15_transducer_data_1[37]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1368.200 2000.000 1368.800 ;
+    END
+  END l15_transducer_data_1[37]
+  PIN l15_transducer_data_1[38]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1460.680 2000.000 1461.280 ;
+    END
+  END l15_transducer_data_1[38]
+  PIN l15_transducer_data_1[39]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1253.130 0.000 1253.410 4.000 ;
+    END
+  END l15_transducer_data_1[39]
+  PIN l15_transducer_data_1[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 323.470 0.000 323.750 4.000 ;
+    END
+  END l15_transducer_data_1[3]
+  PIN l15_transducer_data_1[40]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1670.800 4.000 1671.400 ;
+    END
+  END l15_transducer_data_1[40]
+  PIN l15_transducer_data_1[41]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1522.560 2000.000 1523.160 ;
+    END
+  END l15_transducer_data_1[41]
+  PIN l15_transducer_data_1[42]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1337.770 0.000 1338.050 4.000 ;
+    END
+  END l15_transducer_data_1[42]
+  PIN l15_transducer_data_1[43]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1733.360 4.000 1733.960 ;
+    END
+  END l15_transducer_data_1[43]
+  PIN l15_transducer_data_1[44]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1364.910 1996.000 1365.190 2000.000 ;
+    END
+  END l15_transducer_data_1[44]
+  PIN l15_transducer_data_1[45]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1795.920 4.000 1796.520 ;
+    END
+  END l15_transducer_data_1[45]
+  PIN l15_transducer_data_1[46]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1827.200 4.000 1827.800 ;
+    END
+  END l15_transducer_data_1[46]
+  PIN l15_transducer_data_1[47]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1478.530 0.000 1478.810 4.000 ;
+    END
+  END l15_transducer_data_1[47]
+  PIN l15_transducer_data_1[48]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1506.590 0.000 1506.870 4.000 ;
+    END
+  END l15_transducer_data_1[48]
+  PIN l15_transducer_data_1[49]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1557.190 1996.000 1557.470 2000.000 ;
+    END
+  END l15_transducer_data_1[49]
+  PIN l15_transducer_data_1[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 264.560 4.000 265.160 ;
+    END
+  END l15_transducer_data_1[4]
+  PIN l15_transducer_data_1[50]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1595.830 1996.000 1596.110 2000.000 ;
+    END
+  END l15_transducer_data_1[50]
+  PIN l15_transducer_data_1[51]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1672.650 1996.000 1672.930 2000.000 ;
+    END
+  END l15_transducer_data_1[51]
+  PIN l15_transducer_data_1[52]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1737.440 2000.000 1738.040 ;
+    END
+  END l15_transducer_data_1[52]
+  PIN l15_transducer_data_1[53]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1647.350 0.000 1647.630 4.000 ;
+    END
+  END l15_transducer_data_1[53]
+  PIN l15_transducer_data_1[54]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1749.470 1996.000 1749.750 2000.000 ;
+    END
+  END l15_transducer_data_1[54]
+  PIN l15_transducer_data_1[55]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1788.110 1996.000 1788.390 2000.000 ;
+    END
+  END l15_transducer_data_1[55]
+  PIN l15_transducer_data_1[56]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1768.720 2000.000 1769.320 ;
+    END
+  END l15_transducer_data_1[56]
+  PIN l15_transducer_data_1[57]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1799.320 2000.000 1799.920 ;
+    END
+  END l15_transducer_data_1[57]
+  PIN l15_transducer_data_1[58]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1872.750 0.000 1873.030 4.000 ;
+    END
+  END l15_transducer_data_1[58]
+  PIN l15_transducer_data_1[59]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1864.930 1996.000 1865.210 2000.000 ;
+    END
+  END l15_transducer_data_1[59]
+  PIN l15_transducer_data_1[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 408.110 0.000 408.390 4.000 ;
+    END
+  END l15_transducer_data_1[5]
+  PIN l15_transducer_data_1[60]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1980.390 1996.000 1980.670 2000.000 ;
+    END
+  END l15_transducer_data_1[60]
+  PIN l15_transducer_data_1[61]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1929.330 0.000 1929.610 4.000 ;
+    END
+  END l15_transducer_data_1[61]
+  PIN l15_transducer_data_1[62]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1891.800 2000.000 1892.400 ;
+    END
+  END l15_transducer_data_1[62]
+  PIN l15_transducer_data_1[63]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1953.000 2000.000 1953.600 ;
+    END
+  END l15_transducer_data_1[63]
+  PIN l15_transducer_data_1[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 389.680 4.000 390.280 ;
+    END
+  END l15_transducer_data_1[6]
+  PIN l15_transducer_data_1[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 483.520 4.000 484.120 ;
+    END
+  END l15_transducer_data_1[7]
+  PIN l15_transducer_data_1[8]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 229.880 2000.000 230.480 ;
+    END
+  END l15_transducer_data_1[8]
+  PIN l15_transducer_data_1[9]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 260.480 2000.000 261.080 ;
+    END
+  END l15_transducer_data_1[9]
+  PIN l15_transducer_header_ack
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 13.890 0.000 14.170 4.000 ;
+    END
+  END l15_transducer_header_ack
+  PIN l15_transducer_returntype[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 70.010 0.000 70.290 4.000 ;
+    END
+  END l15_transducer_returntype[0]
+  PIN l15_transducer_returntype[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 137.400 2000.000 138.000 ;
+    END
+  END l15_transducer_returntype[1]
+  PIN l15_transducer_returntype[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 172.590 1996.000 172.870 2000.000 ;
+    END
+  END l15_transducer_returntype[2]
+  PIN l15_transducer_returntype[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 288.050 1996.000 288.330 2000.000 ;
+    END
+  END l15_transducer_returntype[3]
+  PIN l15_transducer_val
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 57.130 1996.000 57.410 2000.000 ;
+    END
+  END l15_transducer_val
+  PIN nrst
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 15.000 4.000 15.600 ;
+    END
+  END nrst
+  PIN transducer_l15_address[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 139.440 4.000 140.040 ;
+    END
+  END transducer_l15_address[0]
+  PIN transducer_l15_address[10]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 557.150 1996.000 557.430 2000.000 ;
+    END
+  END transducer_l15_address[10]
+  PIN transducer_l15_address[11]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 383.560 2000.000 384.160 ;
+    END
+  END transducer_l15_address[11]
+  PIN transducer_l15_address[12]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 445.440 2000.000 446.040 ;
+    END
+  END transducer_l15_address[12]
+  PIN transducer_l15_address[13]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 605.450 0.000 605.730 4.000 ;
+    END
+  END transducer_l15_address[13]
+  PIN transducer_l15_address[14]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 537.920 2000.000 538.520 ;
+    END
+  END transducer_l15_address[14]
+  PIN transducer_l15_address[15]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 568.520 2000.000 569.120 ;
+    END
+  END transducer_l15_address[15]
+  PIN transducer_l15_address[16]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 629.720 2000.000 630.320 ;
+    END
+  END transducer_l15_address[16]
+  PIN transducer_l15_address[17]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 826.920 4.000 827.520 ;
+    END
+  END transducer_l15_address[17]
+  PIN transducer_l15_address[18]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 661.000 2000.000 661.600 ;
+    END
+  END transducer_l15_address[18]
+  PIN transducer_l15_address[19]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 722.200 2000.000 722.800 ;
+    END
+  END transducer_l15_address[19]
+  PIN transducer_l15_address[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 154.650 0.000 154.930 4.000 ;
+    END
+  END transducer_l15_address[1]
+  PIN transducer_l15_address[20]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 784.080 2000.000 784.680 ;
+    END
+  END transducer_l15_address[20]
+  PIN transducer_l15_address[21]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 875.880 2000.000 876.480 ;
+    END
+  END transducer_l15_address[21]
+  PIN transducer_l15_address[22]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 802.330 0.000 802.610 4.000 ;
+    END
+  END transducer_l15_address[22]
+  PIN transducer_l15_address[23]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 788.070 1996.000 788.350 2000.000 ;
+    END
+  END transducer_l15_address[23]
+  PIN transducer_l15_address[24]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 937.760 2000.000 938.360 ;
+    END
+  END transducer_l15_address[24]
+  PIN transducer_l15_address[25]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 968.360 2000.000 968.960 ;
+    END
+  END transducer_l15_address[25]
+  PIN transducer_l15_address[26]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1233.560 4.000 1234.160 ;
+    END
+  END transducer_l15_address[26]
+  PIN transducer_l15_address[27]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1091.440 2000.000 1092.040 ;
+    END
+  END transducer_l15_address[27]
+  PIN transducer_l15_address[28]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1122.040 2000.000 1122.640 ;
+    END
+  END transducer_l15_address[28]
+  PIN transducer_l15_address[29]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 941.710 1996.000 941.990 2000.000 ;
+    END
+  END transducer_l15_address[29]
+  PIN transducer_l15_address[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 238.830 0.000 239.110 4.000 ;
+    END
+  END transducer_l15_address[2]
+  PIN transducer_l15_address[30]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1027.730 0.000 1028.010 4.000 ;
+    END
+  END transducer_l15_address[30]
+  PIN transducer_l15_address[31]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1183.920 2000.000 1184.520 ;
+    END
+  END transducer_l15_address[31]
+  PIN transducer_l15_address[32]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1084.310 0.000 1084.590 4.000 ;
+    END
+  END transducer_l15_address[32]
+  PIN transducer_l15_address[33]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1276.400 2000.000 1277.000 ;
+    END
+  END transducer_l15_address[33]
+  PIN transducer_l15_address[34]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1140.430 0.000 1140.710 4.000 ;
+    END
+  END transducer_l15_address[34]
+  PIN transducer_l15_address[35]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1483.120 4.000 1483.720 ;
+    END
+  END transducer_l15_address[35]
+  PIN transducer_l15_address[36]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1337.600 2000.000 1338.200 ;
+    END
+  END transducer_l15_address[36]
+  PIN transducer_l15_address[37]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1399.480 2000.000 1400.080 ;
+    END
+  END transducer_l15_address[37]
+  PIN transducer_l15_address[38]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1168.490 0.000 1168.770 4.000 ;
+    END
+  END transducer_l15_address[38]
+  PIN transducer_l15_address[39]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1639.520 4.000 1640.120 ;
+    END
+  END transducer_l15_address[39]
+  PIN transducer_l15_address[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 233.280 4.000 233.880 ;
+    END
+  END transducer_l15_address[3]
+  PIN transducer_l15_address[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 403.510 1996.000 403.790 2000.000 ;
+    END
+  END transducer_l15_address[4]
+  PIN transducer_l15_address[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 327.120 4.000 327.720 ;
+    END
+  END transducer_l15_address[5]
+  PIN transducer_l15_address[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 436.170 0.000 436.450 4.000 ;
+    END
+  END transducer_l15_address[6]
+  PIN transducer_l15_address[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 514.800 4.000 515.400 ;
+    END
+  END transducer_l15_address[7]
+  PIN transducer_l15_address[8]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 546.080 4.000 546.680 ;
+    END
+  END transducer_l15_address[8]
+  PIN transducer_l15_address[9]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 291.760 2000.000 292.360 ;
+    END
+  END transducer_l15_address[9]
+  PIN transducer_l15_data[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 95.770 1996.000 96.050 2000.000 ;
+    END
+  END transducer_l15_data[0]
+  PIN transducer_l15_data[10]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 464.230 0.000 464.510 4.000 ;
+    END
+  END transducer_l15_data[10]
+  PIN transducer_l15_data[11]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 414.840 2000.000 415.440 ;
+    END
+  END transducer_l15_data[11]
+  PIN transducer_l15_data[12]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 476.040 2000.000 476.640 ;
+    END
+  END transducer_l15_data[12]
+  PIN transducer_l15_data[13]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 633.510 0.000 633.790 4.000 ;
+    END
+  END transducer_l15_data[13]
+  PIN transducer_l15_data[14]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 661.570 0.000 661.850 4.000 ;
+    END
+  END transducer_l15_data[14]
+  PIN transducer_l15_data[15]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 599.120 2000.000 599.720 ;
+    END
+  END transducer_l15_data[15]
+  PIN transducer_l15_data[16]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 764.360 4.000 764.960 ;
+    END
+  END transducer_l15_data[16]
+  PIN transducer_l15_data[17]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 672.610 1996.000 672.890 2000.000 ;
+    END
+  END transducer_l15_data[17]
+  PIN transducer_l15_data[18]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 858.200 4.000 858.800 ;
+    END
+  END transducer_l15_data[18]
+  PIN transducer_l15_data[19]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 749.430 1996.000 749.710 2000.000 ;
+    END
+  END transducer_l15_data[19]
+  PIN transducer_l15_data[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 182.710 0.000 182.990 4.000 ;
+    END
+  END transducer_l15_data[1]
+  PIN transducer_l15_data[20]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 814.680 2000.000 815.280 ;
+    END
+  END transducer_l15_data[20]
+  PIN transducer_l15_data[21]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 983.320 4.000 983.920 ;
+    END
+  END transducer_l15_data[21]
+  PIN transducer_l15_data[22]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1045.880 4.000 1046.480 ;
+    END
+  END transducer_l15_data[22]
+  PIN transducer_l15_data[23]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 907.160 2000.000 907.760 ;
+    END
+  END transducer_l15_data[23]
+  PIN transducer_l15_data[24]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 826.250 1996.000 826.530 2000.000 ;
+    END
+  END transducer_l15_data[24]
+  PIN transducer_l15_data[25]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 858.910 0.000 859.190 4.000 ;
+    END
+  END transducer_l15_data[25]
+  PIN transducer_l15_data[26]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1030.240 2000.000 1030.840 ;
+    END
+  END transducer_l15_data[26]
+  PIN transducer_l15_data[27]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 915.030 0.000 915.310 4.000 ;
+    END
+  END transducer_l15_data[27]
+  PIN transducer_l15_data[28]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1153.320 2000.000 1153.920 ;
+    END
+  END transducer_l15_data[28]
+  PIN transducer_l15_data[29]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 980.350 1996.000 980.630 2000.000 ;
+    END
+  END transducer_l15_data[29]
+  PIN transducer_l15_data[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 211.230 1996.000 211.510 2000.000 ;
+    END
+  END transducer_l15_data[2]
+  PIN transducer_l15_data[30]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1264.840 4.000 1265.440 ;
+    END
+  END transducer_l15_data[30]
+  PIN transducer_l15_data[31]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1095.810 1996.000 1096.090 2000.000 ;
+    END
+  END transducer_l15_data[31]
+  PIN transducer_l15_data[32]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1214.520 2000.000 1215.120 ;
+    END
+  END transducer_l15_data[32]
+  PIN transducer_l15_data[33]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1112.370 0.000 1112.650 4.000 ;
+    END
+  END transducer_l15_data[33]
+  PIN transducer_l15_data[34]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1211.270 1996.000 1211.550 2000.000 ;
+    END
+  END transducer_l15_data[34]
+  PIN transducer_l15_data[35]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1249.450 1996.000 1249.730 2000.000 ;
+    END
+  END transducer_l15_data[35]
+  PIN transducer_l15_data[36]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1545.680 4.000 1546.280 ;
+    END
+  END transducer_l15_data[36]
+  PIN transducer_l15_data[37]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1608.240 4.000 1608.840 ;
+    END
+  END transducer_l15_data[37]
+  PIN transducer_l15_data[38]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1197.010 0.000 1197.290 4.000 ;
+    END
+  END transducer_l15_data[38]
+  PIN transducer_l15_data[39]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1281.190 0.000 1281.470 4.000 ;
+    END
+  END transducer_l15_data[39]
+  PIN transducer_l15_data[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 351.530 0.000 351.810 4.000 ;
+    END
+  END transducer_l15_data[3]
+  PIN transducer_l15_data[40]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1288.090 1996.000 1288.370 2000.000 ;
+    END
+  END transducer_l15_data[40]
+  PIN transducer_l15_data[41]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1326.270 1996.000 1326.550 2000.000 ;
+    END
+  END transducer_l15_data[41]
+  PIN transducer_l15_data[42]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1365.830 0.000 1366.110 4.000 ;
+    END
+  END transducer_l15_data[42]
+  PIN transducer_l15_data[43]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1583.760 2000.000 1584.360 ;
+    END
+  END transducer_l15_data[43]
+  PIN transducer_l15_data[44]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1403.550 1996.000 1403.830 2000.000 ;
+    END
+  END transducer_l15_data[44]
+  PIN transducer_l15_data[45]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1614.360 2000.000 1614.960 ;
+    END
+  END transducer_l15_data[45]
+  PIN transducer_l15_data[46]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1645.640 2000.000 1646.240 ;
+    END
+  END transducer_l15_data[46]
+  PIN transducer_l15_data[47]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1441.730 1996.000 1442.010 2000.000 ;
+    END
+  END transducer_l15_data[47]
+  PIN transducer_l15_data[48]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1676.240 2000.000 1676.840 ;
+    END
+  END transducer_l15_data[48]
+  PIN transducer_l15_data[49]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1534.650 0.000 1534.930 4.000 ;
+    END
+  END transducer_l15_data[49]
+  PIN transducer_l15_data[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 295.840 4.000 296.440 ;
+    END
+  END transducer_l15_data[4]
+  PIN transducer_l15_data[50]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1634.010 1996.000 1634.290 2000.000 ;
+    END
+  END transducer_l15_data[50]
+  PIN transducer_l15_data[51]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1706.840 2000.000 1707.440 ;
+    END
+  END transducer_l15_data[51]
+  PIN transducer_l15_data[52]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1858.480 4.000 1859.080 ;
+    END
+  END transducer_l15_data[52]
+  PIN transducer_l15_data[53]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1675.870 0.000 1676.150 4.000 ;
+    END
+  END transducer_l15_data[53]
+  PIN transducer_l15_data[54]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1921.040 4.000 1921.640 ;
+    END
+  END transducer_l15_data[54]
+  PIN transducer_l15_data[55]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1731.990 0.000 1732.270 4.000 ;
+    END
+  END transducer_l15_data[55]
+  PIN transducer_l15_data[56]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1788.570 0.000 1788.850 4.000 ;
+    END
+  END transducer_l15_data[56]
+  PIN transducer_l15_data[57]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1844.690 0.000 1844.970 4.000 ;
+    END
+  END transducer_l15_data[57]
+  PIN transducer_l15_data[58]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1952.320 4.000 1952.920 ;
+    END
+  END transducer_l15_data[58]
+  PIN transducer_l15_data[59]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1903.570 1996.000 1903.850 2000.000 ;
+    END
+  END transducer_l15_data[59]
+  PIN transducer_l15_data[5]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 358.400 4.000 359.000 ;
+    END
+  END transducer_l15_data[5]
+  PIN transducer_l15_data[60]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 1983.600 4.000 1984.200 ;
+    END
+  END transducer_l15_data[60]
+  PIN transducer_l15_data[61]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 1957.390 0.000 1957.670 4.000 ;
+    END
+  END transducer_l15_data[61]
+  PIN transducer_l15_data[62]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1922.400 2000.000 1923.000 ;
+    END
+  END transducer_l15_data[62]
+  PIN transducer_l15_data[63]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 1983.600 2000.000 1984.200 ;
+    END
+  END transducer_l15_data[63]
+  PIN transducer_l15_data[6]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 420.960 4.000 421.560 ;
+    END
+  END transducer_l15_data[6]
+  PIN transducer_l15_data[7]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 199.280 2000.000 199.880 ;
+    END
+  END transducer_l15_data[7]
+  PIN transducer_l15_data[8]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 577.360 4.000 577.960 ;
+    END
+  END transducer_l15_data[8]
+  PIN transducer_l15_data[9]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 322.360 2000.000 322.960 ;
+    END
+  END transducer_l15_data[9]
+  PIN transducer_l15_req_ack
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 45.600 4.000 46.200 ;
+    END
+  END transducer_l15_req_ack
+  PIN transducer_l15_rqtype[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 98.070 0.000 98.350 4.000 ;
+    END
+  END transducer_l15_rqtype[0]
+  PIN transducer_l15_rqtype[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 170.720 4.000 171.320 ;
+    END
+  END transducer_l15_rqtype[1]
+  PIN transducer_l15_rqtype[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 267.350 0.000 267.630 4.000 ;
+    END
+  END transducer_l15_rqtype[2]
+  PIN transducer_l15_rqtype[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 326.230 1996.000 326.510 2000.000 ;
+    END
+  END transducer_l15_rqtype[3]
+  PIN transducer_l15_rqtype[4]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 168.680 2000.000 169.280 ;
+    END
+  END transducer_l15_rqtype[4]
+  PIN transducer_l15_size[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 1996.000 76.200 2000.000 76.800 ;
+    END
+  END transducer_l15_size[0]
+  PIN transducer_l15_size[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 133.950 1996.000 134.230 2000.000 ;
+    END
+  END transducer_l15_size[1]
+  PIN transducer_l15_size[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 295.410 0.000 295.690 4.000 ;
+    END
+  END transducer_l15_size[2]
+  PIN transducer_l15_val
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 76.880 4.000 77.480 ;
+    END
+  END transducer_l15_val
+  PIN vccd1
+    DIRECTION INPUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 21.040 10.640 22.640 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 174.640 10.640 176.240 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 328.240 10.640 329.840 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 481.840 10.640 483.440 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 635.440 10.640 637.040 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 789.040 10.640 790.640 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 942.640 10.640 944.240 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1096.240 10.640 1097.840 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1249.840 10.640 1251.440 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1403.440 10.640 1405.040 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1557.040 10.640 1558.640 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1710.640 10.640 1712.240 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1864.240 10.640 1865.840 1988.560 ;
+    END
+  END vccd1
+  PIN vssd1
+    DIRECTION INPUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 97.840 10.640 99.440 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 251.440 10.640 253.040 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 405.040 10.640 406.640 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 558.640 10.640 560.240 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 712.240 10.640 713.840 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 865.840 10.640 867.440 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1019.440 10.640 1021.040 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1173.040 10.640 1174.640 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1326.640 10.640 1328.240 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1480.240 10.640 1481.840 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1633.840 10.640 1635.440 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1787.440 10.640 1789.040 1988.560 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 1941.040 10.640 1942.640 1988.560 ;
+    END
+  END vssd1
+  OBS
+      LAYER li1 ;
+        RECT 5.520 10.795 1994.100 1988.405 ;
+      LAYER met1 ;
+        RECT 5.520 6.840 1994.100 1988.560 ;
+      LAYER met2 ;
+        RECT 6.990 1995.720 18.670 1996.210 ;
+        RECT 19.510 1995.720 56.850 1996.210 ;
+        RECT 57.690 1995.720 95.490 1996.210 ;
+        RECT 96.330 1995.720 133.670 1996.210 ;
+        RECT 134.510 1995.720 172.310 1996.210 ;
+        RECT 173.150 1995.720 210.950 1996.210 ;
+        RECT 211.790 1995.720 249.130 1996.210 ;
+        RECT 249.970 1995.720 287.770 1996.210 ;
+        RECT 288.610 1995.720 325.950 1996.210 ;
+        RECT 326.790 1995.720 364.590 1996.210 ;
+        RECT 365.430 1995.720 403.230 1996.210 ;
+        RECT 404.070 1995.720 441.410 1996.210 ;
+        RECT 442.250 1995.720 480.050 1996.210 ;
+        RECT 480.890 1995.720 518.690 1996.210 ;
+        RECT 519.530 1995.720 556.870 1996.210 ;
+        RECT 557.710 1995.720 595.510 1996.210 ;
+        RECT 596.350 1995.720 633.690 1996.210 ;
+        RECT 634.530 1995.720 672.330 1996.210 ;
+        RECT 673.170 1995.720 710.970 1996.210 ;
+        RECT 711.810 1995.720 749.150 1996.210 ;
+        RECT 749.990 1995.720 787.790 1996.210 ;
+        RECT 788.630 1995.720 825.970 1996.210 ;
+        RECT 826.810 1995.720 864.610 1996.210 ;
+        RECT 865.450 1995.720 903.250 1996.210 ;
+        RECT 904.090 1995.720 941.430 1996.210 ;
+        RECT 942.270 1995.720 980.070 1996.210 ;
+        RECT 980.910 1995.720 1018.710 1996.210 ;
+        RECT 1019.550 1995.720 1056.890 1996.210 ;
+        RECT 1057.730 1995.720 1095.530 1996.210 ;
+        RECT 1096.370 1995.720 1133.710 1996.210 ;
+        RECT 1134.550 1995.720 1172.350 1996.210 ;
+        RECT 1173.190 1995.720 1210.990 1996.210 ;
+        RECT 1211.830 1995.720 1249.170 1996.210 ;
+        RECT 1250.010 1995.720 1287.810 1996.210 ;
+        RECT 1288.650 1995.720 1325.990 1996.210 ;
+        RECT 1326.830 1995.720 1364.630 1996.210 ;
+        RECT 1365.470 1995.720 1403.270 1996.210 ;
+        RECT 1404.110 1995.720 1441.450 1996.210 ;
+        RECT 1442.290 1995.720 1480.090 1996.210 ;
+        RECT 1480.930 1995.720 1518.730 1996.210 ;
+        RECT 1519.570 1995.720 1556.910 1996.210 ;
+        RECT 1557.750 1995.720 1595.550 1996.210 ;
+        RECT 1596.390 1995.720 1633.730 1996.210 ;
+        RECT 1634.570 1995.720 1672.370 1996.210 ;
+        RECT 1673.210 1995.720 1711.010 1996.210 ;
+        RECT 1711.850 1995.720 1749.190 1996.210 ;
+        RECT 1750.030 1995.720 1787.830 1996.210 ;
+        RECT 1788.670 1995.720 1826.010 1996.210 ;
+        RECT 1826.850 1995.720 1864.650 1996.210 ;
+        RECT 1865.490 1995.720 1903.290 1996.210 ;
+        RECT 1904.130 1995.720 1941.470 1996.210 ;
+        RECT 1942.310 1995.720 1980.110 1996.210 ;
+        RECT 1980.950 1995.720 1991.240 1996.210 ;
+        RECT 6.990 4.280 1991.240 1995.720 ;
+        RECT 6.990 4.000 13.610 4.280 ;
+        RECT 14.450 4.000 41.670 4.280 ;
+        RECT 42.510 4.000 69.730 4.280 ;
+        RECT 70.570 4.000 97.790 4.280 ;
+        RECT 98.630 4.000 125.850 4.280 ;
+        RECT 126.690 4.000 154.370 4.280 ;
+        RECT 155.210 4.000 182.430 4.280 ;
+        RECT 183.270 4.000 210.490 4.280 ;
+        RECT 211.330 4.000 238.550 4.280 ;
+        RECT 239.390 4.000 267.070 4.280 ;
+        RECT 267.910 4.000 295.130 4.280 ;
+        RECT 295.970 4.000 323.190 4.280 ;
+        RECT 324.030 4.000 351.250 4.280 ;
+        RECT 352.090 4.000 379.770 4.280 ;
+        RECT 380.610 4.000 407.830 4.280 ;
+        RECT 408.670 4.000 435.890 4.280 ;
+        RECT 436.730 4.000 463.950 4.280 ;
+        RECT 464.790 4.000 492.470 4.280 ;
+        RECT 493.310 4.000 520.530 4.280 ;
+        RECT 521.370 4.000 548.590 4.280 ;
+        RECT 549.430 4.000 576.650 4.280 ;
+        RECT 577.490 4.000 605.170 4.280 ;
+        RECT 606.010 4.000 633.230 4.280 ;
+        RECT 634.070 4.000 661.290 4.280 ;
+        RECT 662.130 4.000 689.350 4.280 ;
+        RECT 690.190 4.000 717.410 4.280 ;
+        RECT 718.250 4.000 745.930 4.280 ;
+        RECT 746.770 4.000 773.990 4.280 ;
+        RECT 774.830 4.000 802.050 4.280 ;
+        RECT 802.890 4.000 830.110 4.280 ;
+        RECT 830.950 4.000 858.630 4.280 ;
+        RECT 859.470 4.000 886.690 4.280 ;
+        RECT 887.530 4.000 914.750 4.280 ;
+        RECT 915.590 4.000 942.810 4.280 ;
+        RECT 943.650 4.000 971.330 4.280 ;
+        RECT 972.170 4.000 999.390 4.280 ;
+        RECT 1000.230 4.000 1027.450 4.280 ;
+        RECT 1028.290 4.000 1055.510 4.280 ;
+        RECT 1056.350 4.000 1084.030 4.280 ;
+        RECT 1084.870 4.000 1112.090 4.280 ;
+        RECT 1112.930 4.000 1140.150 4.280 ;
+        RECT 1140.990 4.000 1168.210 4.280 ;
+        RECT 1169.050 4.000 1196.730 4.280 ;
+        RECT 1197.570 4.000 1224.790 4.280 ;
+        RECT 1225.630 4.000 1252.850 4.280 ;
+        RECT 1253.690 4.000 1280.910 4.280 ;
+        RECT 1281.750 4.000 1309.430 4.280 ;
+        RECT 1310.270 4.000 1337.490 4.280 ;
+        RECT 1338.330 4.000 1365.550 4.280 ;
+        RECT 1366.390 4.000 1393.610 4.280 ;
+        RECT 1394.450 4.000 1421.670 4.280 ;
+        RECT 1422.510 4.000 1450.190 4.280 ;
+        RECT 1451.030 4.000 1478.250 4.280 ;
+        RECT 1479.090 4.000 1506.310 4.280 ;
+        RECT 1507.150 4.000 1534.370 4.280 ;
+        RECT 1535.210 4.000 1562.890 4.280 ;
+        RECT 1563.730 4.000 1590.950 4.280 ;
+        RECT 1591.790 4.000 1619.010 4.280 ;
+        RECT 1619.850 4.000 1647.070 4.280 ;
+        RECT 1647.910 4.000 1675.590 4.280 ;
+        RECT 1676.430 4.000 1703.650 4.280 ;
+        RECT 1704.490 4.000 1731.710 4.280 ;
+        RECT 1732.550 4.000 1759.770 4.280 ;
+        RECT 1760.610 4.000 1788.290 4.280 ;
+        RECT 1789.130 4.000 1816.350 4.280 ;
+        RECT 1817.190 4.000 1844.410 4.280 ;
+        RECT 1845.250 4.000 1872.470 4.280 ;
+        RECT 1873.310 4.000 1900.990 4.280 ;
+        RECT 1901.830 4.000 1929.050 4.280 ;
+        RECT 1929.890 4.000 1957.110 4.280 ;
+        RECT 1957.950 4.000 1985.170 4.280 ;
+        RECT 1986.010 4.000 1991.240 4.280 ;
+      LAYER met3 ;
+        RECT 4.000 1984.600 1996.000 1988.485 ;
+        RECT 4.400 1983.200 1995.600 1984.600 ;
+        RECT 4.000 1954.000 1996.000 1983.200 ;
+        RECT 4.000 1953.320 1995.600 1954.000 ;
+        RECT 4.400 1952.600 1995.600 1953.320 ;
+        RECT 4.400 1951.920 1996.000 1952.600 ;
+        RECT 4.000 1923.400 1996.000 1951.920 ;
+        RECT 4.000 1922.040 1995.600 1923.400 ;
+        RECT 4.400 1922.000 1995.600 1922.040 ;
+        RECT 4.400 1920.640 1996.000 1922.000 ;
+        RECT 4.000 1892.800 1996.000 1920.640 ;
+        RECT 4.000 1891.400 1995.600 1892.800 ;
+        RECT 4.000 1890.760 1996.000 1891.400 ;
+        RECT 4.400 1889.360 1996.000 1890.760 ;
+        RECT 4.000 1861.520 1996.000 1889.360 ;
+        RECT 4.000 1860.120 1995.600 1861.520 ;
+        RECT 4.000 1859.480 1996.000 1860.120 ;
+        RECT 4.400 1858.080 1996.000 1859.480 ;
+        RECT 4.000 1830.920 1996.000 1858.080 ;
+        RECT 4.000 1829.520 1995.600 1830.920 ;
+        RECT 4.000 1828.200 1996.000 1829.520 ;
+        RECT 4.400 1826.800 1996.000 1828.200 ;
+        RECT 4.000 1800.320 1996.000 1826.800 ;
+        RECT 4.000 1798.920 1995.600 1800.320 ;
+        RECT 4.000 1796.920 1996.000 1798.920 ;
+        RECT 4.400 1795.520 1996.000 1796.920 ;
+        RECT 4.000 1769.720 1996.000 1795.520 ;
+        RECT 4.000 1768.320 1995.600 1769.720 ;
+        RECT 4.000 1765.640 1996.000 1768.320 ;
+        RECT 4.400 1764.240 1996.000 1765.640 ;
+        RECT 4.000 1738.440 1996.000 1764.240 ;
+        RECT 4.000 1737.040 1995.600 1738.440 ;
+        RECT 4.000 1734.360 1996.000 1737.040 ;
+        RECT 4.400 1732.960 1996.000 1734.360 ;
+        RECT 4.000 1707.840 1996.000 1732.960 ;
+        RECT 4.000 1706.440 1995.600 1707.840 ;
+        RECT 4.000 1703.080 1996.000 1706.440 ;
+        RECT 4.400 1701.680 1996.000 1703.080 ;
+        RECT 4.000 1677.240 1996.000 1701.680 ;
+        RECT 4.000 1675.840 1995.600 1677.240 ;
+        RECT 4.000 1671.800 1996.000 1675.840 ;
+        RECT 4.400 1670.400 1996.000 1671.800 ;
+        RECT 4.000 1646.640 1996.000 1670.400 ;
+        RECT 4.000 1645.240 1995.600 1646.640 ;
+        RECT 4.000 1640.520 1996.000 1645.240 ;
+        RECT 4.400 1639.120 1996.000 1640.520 ;
+        RECT 4.000 1615.360 1996.000 1639.120 ;
+        RECT 4.000 1613.960 1995.600 1615.360 ;
+        RECT 4.000 1609.240 1996.000 1613.960 ;
+        RECT 4.400 1607.840 1996.000 1609.240 ;
+        RECT 4.000 1584.760 1996.000 1607.840 ;
+        RECT 4.000 1583.360 1995.600 1584.760 ;
+        RECT 4.000 1577.960 1996.000 1583.360 ;
+        RECT 4.400 1576.560 1996.000 1577.960 ;
+        RECT 4.000 1554.160 1996.000 1576.560 ;
+        RECT 4.000 1552.760 1995.600 1554.160 ;
+        RECT 4.000 1546.680 1996.000 1552.760 ;
+        RECT 4.400 1545.280 1996.000 1546.680 ;
+        RECT 4.000 1523.560 1996.000 1545.280 ;
+        RECT 4.000 1522.160 1995.600 1523.560 ;
+        RECT 4.000 1515.400 1996.000 1522.160 ;
+        RECT 4.400 1514.000 1996.000 1515.400 ;
+        RECT 4.000 1492.280 1996.000 1514.000 ;
+        RECT 4.000 1490.880 1995.600 1492.280 ;
+        RECT 4.000 1484.120 1996.000 1490.880 ;
+        RECT 4.400 1482.720 1996.000 1484.120 ;
+        RECT 4.000 1461.680 1996.000 1482.720 ;
+        RECT 4.000 1460.280 1995.600 1461.680 ;
+        RECT 4.000 1452.840 1996.000 1460.280 ;
+        RECT 4.400 1451.440 1996.000 1452.840 ;
+        RECT 4.000 1431.080 1996.000 1451.440 ;
+        RECT 4.000 1429.680 1995.600 1431.080 ;
+        RECT 4.000 1421.560 1996.000 1429.680 ;
+        RECT 4.400 1420.160 1996.000 1421.560 ;
+        RECT 4.000 1400.480 1996.000 1420.160 ;
+        RECT 4.000 1399.080 1995.600 1400.480 ;
+        RECT 4.000 1390.280 1996.000 1399.080 ;
+        RECT 4.400 1388.880 1996.000 1390.280 ;
+        RECT 4.000 1369.200 1996.000 1388.880 ;
+        RECT 4.000 1367.800 1995.600 1369.200 ;
+        RECT 4.000 1359.000 1996.000 1367.800 ;
+        RECT 4.400 1357.600 1996.000 1359.000 ;
+        RECT 4.000 1338.600 1996.000 1357.600 ;
+        RECT 4.000 1337.200 1995.600 1338.600 ;
+        RECT 4.000 1328.400 1996.000 1337.200 ;
+        RECT 4.400 1327.000 1996.000 1328.400 ;
+        RECT 4.000 1308.000 1996.000 1327.000 ;
+        RECT 4.000 1306.600 1995.600 1308.000 ;
+        RECT 4.000 1297.120 1996.000 1306.600 ;
+        RECT 4.400 1295.720 1996.000 1297.120 ;
+        RECT 4.000 1277.400 1996.000 1295.720 ;
+        RECT 4.000 1276.000 1995.600 1277.400 ;
+        RECT 4.000 1265.840 1996.000 1276.000 ;
+        RECT 4.400 1264.440 1996.000 1265.840 ;
+        RECT 4.000 1246.120 1996.000 1264.440 ;
+        RECT 4.000 1244.720 1995.600 1246.120 ;
+        RECT 4.000 1234.560 1996.000 1244.720 ;
+        RECT 4.400 1233.160 1996.000 1234.560 ;
+        RECT 4.000 1215.520 1996.000 1233.160 ;
+        RECT 4.000 1214.120 1995.600 1215.520 ;
+        RECT 4.000 1203.280 1996.000 1214.120 ;
+        RECT 4.400 1201.880 1996.000 1203.280 ;
+        RECT 4.000 1184.920 1996.000 1201.880 ;
+        RECT 4.000 1183.520 1995.600 1184.920 ;
+        RECT 4.000 1172.000 1996.000 1183.520 ;
+        RECT 4.400 1170.600 1996.000 1172.000 ;
+        RECT 4.000 1154.320 1996.000 1170.600 ;
+        RECT 4.000 1152.920 1995.600 1154.320 ;
+        RECT 4.000 1140.720 1996.000 1152.920 ;
+        RECT 4.400 1139.320 1996.000 1140.720 ;
+        RECT 4.000 1123.040 1996.000 1139.320 ;
+        RECT 4.000 1121.640 1995.600 1123.040 ;
+        RECT 4.000 1109.440 1996.000 1121.640 ;
+        RECT 4.400 1108.040 1996.000 1109.440 ;
+        RECT 4.000 1092.440 1996.000 1108.040 ;
+        RECT 4.000 1091.040 1995.600 1092.440 ;
+        RECT 4.000 1078.160 1996.000 1091.040 ;
+        RECT 4.400 1076.760 1996.000 1078.160 ;
+        RECT 4.000 1061.840 1996.000 1076.760 ;
+        RECT 4.000 1060.440 1995.600 1061.840 ;
+        RECT 4.000 1046.880 1996.000 1060.440 ;
+        RECT 4.400 1045.480 1996.000 1046.880 ;
+        RECT 4.000 1031.240 1996.000 1045.480 ;
+        RECT 4.000 1029.840 1995.600 1031.240 ;
+        RECT 4.000 1015.600 1996.000 1029.840 ;
+        RECT 4.400 1014.200 1996.000 1015.600 ;
+        RECT 4.000 999.960 1996.000 1014.200 ;
+        RECT 4.000 998.560 1995.600 999.960 ;
+        RECT 4.000 984.320 1996.000 998.560 ;
+        RECT 4.400 982.920 1996.000 984.320 ;
+        RECT 4.000 969.360 1996.000 982.920 ;
+        RECT 4.000 967.960 1995.600 969.360 ;
+        RECT 4.000 953.040 1996.000 967.960 ;
+        RECT 4.400 951.640 1996.000 953.040 ;
+        RECT 4.000 938.760 1996.000 951.640 ;
+        RECT 4.000 937.360 1995.600 938.760 ;
+        RECT 4.000 921.760 1996.000 937.360 ;
+        RECT 4.400 920.360 1996.000 921.760 ;
+        RECT 4.000 908.160 1996.000 920.360 ;
+        RECT 4.000 906.760 1995.600 908.160 ;
+        RECT 4.000 890.480 1996.000 906.760 ;
+        RECT 4.400 889.080 1996.000 890.480 ;
+        RECT 4.000 876.880 1996.000 889.080 ;
+        RECT 4.000 875.480 1995.600 876.880 ;
+        RECT 4.000 859.200 1996.000 875.480 ;
+        RECT 4.400 857.800 1996.000 859.200 ;
+        RECT 4.000 846.280 1996.000 857.800 ;
+        RECT 4.000 844.880 1995.600 846.280 ;
+        RECT 4.000 827.920 1996.000 844.880 ;
+        RECT 4.400 826.520 1996.000 827.920 ;
+        RECT 4.000 815.680 1996.000 826.520 ;
+        RECT 4.000 814.280 1995.600 815.680 ;
+        RECT 4.000 796.640 1996.000 814.280 ;
+        RECT 4.400 795.240 1996.000 796.640 ;
+        RECT 4.000 785.080 1996.000 795.240 ;
+        RECT 4.000 783.680 1995.600 785.080 ;
+        RECT 4.000 765.360 1996.000 783.680 ;
+        RECT 4.400 763.960 1996.000 765.360 ;
+        RECT 4.000 753.800 1996.000 763.960 ;
+        RECT 4.000 752.400 1995.600 753.800 ;
+        RECT 4.000 734.080 1996.000 752.400 ;
+        RECT 4.400 732.680 1996.000 734.080 ;
+        RECT 4.000 723.200 1996.000 732.680 ;
+        RECT 4.000 721.800 1995.600 723.200 ;
+        RECT 4.000 702.800 1996.000 721.800 ;
+        RECT 4.400 701.400 1996.000 702.800 ;
+        RECT 4.000 692.600 1996.000 701.400 ;
+        RECT 4.000 691.200 1995.600 692.600 ;
+        RECT 4.000 672.200 1996.000 691.200 ;
+        RECT 4.400 670.800 1996.000 672.200 ;
+        RECT 4.000 662.000 1996.000 670.800 ;
+        RECT 4.000 660.600 1995.600 662.000 ;
+        RECT 4.000 640.920 1996.000 660.600 ;
+        RECT 4.400 639.520 1996.000 640.920 ;
+        RECT 4.000 630.720 1996.000 639.520 ;
+        RECT 4.000 629.320 1995.600 630.720 ;
+        RECT 4.000 609.640 1996.000 629.320 ;
+        RECT 4.400 608.240 1996.000 609.640 ;
+        RECT 4.000 600.120 1996.000 608.240 ;
+        RECT 4.000 598.720 1995.600 600.120 ;
+        RECT 4.000 578.360 1996.000 598.720 ;
+        RECT 4.400 576.960 1996.000 578.360 ;
+        RECT 4.000 569.520 1996.000 576.960 ;
+        RECT 4.000 568.120 1995.600 569.520 ;
+        RECT 4.000 547.080 1996.000 568.120 ;
+        RECT 4.400 545.680 1996.000 547.080 ;
+        RECT 4.000 538.920 1996.000 545.680 ;
+        RECT 4.000 537.520 1995.600 538.920 ;
+        RECT 4.000 515.800 1996.000 537.520 ;
+        RECT 4.400 514.400 1996.000 515.800 ;
+        RECT 4.000 507.640 1996.000 514.400 ;
+        RECT 4.000 506.240 1995.600 507.640 ;
+        RECT 4.000 484.520 1996.000 506.240 ;
+        RECT 4.400 483.120 1996.000 484.520 ;
+        RECT 4.000 477.040 1996.000 483.120 ;
+        RECT 4.000 475.640 1995.600 477.040 ;
+        RECT 4.000 453.240 1996.000 475.640 ;
+        RECT 4.400 451.840 1996.000 453.240 ;
+        RECT 4.000 446.440 1996.000 451.840 ;
+        RECT 4.000 445.040 1995.600 446.440 ;
+        RECT 4.000 421.960 1996.000 445.040 ;
+        RECT 4.400 420.560 1996.000 421.960 ;
+        RECT 4.000 415.840 1996.000 420.560 ;
+        RECT 4.000 414.440 1995.600 415.840 ;
+        RECT 4.000 390.680 1996.000 414.440 ;
+        RECT 4.400 389.280 1996.000 390.680 ;
+        RECT 4.000 384.560 1996.000 389.280 ;
+        RECT 4.000 383.160 1995.600 384.560 ;
+        RECT 4.000 359.400 1996.000 383.160 ;
+        RECT 4.400 358.000 1996.000 359.400 ;
+        RECT 4.000 353.960 1996.000 358.000 ;
+        RECT 4.000 352.560 1995.600 353.960 ;
+        RECT 4.000 328.120 1996.000 352.560 ;
+        RECT 4.400 326.720 1996.000 328.120 ;
+        RECT 4.000 323.360 1996.000 326.720 ;
+        RECT 4.000 321.960 1995.600 323.360 ;
+        RECT 4.000 296.840 1996.000 321.960 ;
+        RECT 4.400 295.440 1996.000 296.840 ;
+        RECT 4.000 292.760 1996.000 295.440 ;
+        RECT 4.000 291.360 1995.600 292.760 ;
+        RECT 4.000 265.560 1996.000 291.360 ;
+        RECT 4.400 264.160 1996.000 265.560 ;
+        RECT 4.000 261.480 1996.000 264.160 ;
+        RECT 4.000 260.080 1995.600 261.480 ;
+        RECT 4.000 234.280 1996.000 260.080 ;
+        RECT 4.400 232.880 1996.000 234.280 ;
+        RECT 4.000 230.880 1996.000 232.880 ;
+        RECT 4.000 229.480 1995.600 230.880 ;
+        RECT 4.000 203.000 1996.000 229.480 ;
+        RECT 4.400 201.600 1996.000 203.000 ;
+        RECT 4.000 200.280 1996.000 201.600 ;
+        RECT 4.000 198.880 1995.600 200.280 ;
+        RECT 4.000 171.720 1996.000 198.880 ;
+        RECT 4.400 170.320 1996.000 171.720 ;
+        RECT 4.000 169.680 1996.000 170.320 ;
+        RECT 4.000 168.280 1995.600 169.680 ;
+        RECT 4.000 140.440 1996.000 168.280 ;
+        RECT 4.400 139.040 1996.000 140.440 ;
+        RECT 4.000 138.400 1996.000 139.040 ;
+        RECT 4.000 137.000 1995.600 138.400 ;
+        RECT 4.000 109.160 1996.000 137.000 ;
+        RECT 4.400 107.800 1996.000 109.160 ;
+        RECT 4.400 107.760 1995.600 107.800 ;
+        RECT 4.000 106.400 1995.600 107.760 ;
+        RECT 4.000 77.880 1996.000 106.400 ;
+        RECT 4.400 77.200 1996.000 77.880 ;
+        RECT 4.400 76.480 1995.600 77.200 ;
+        RECT 4.000 75.800 1995.600 76.480 ;
+        RECT 4.000 46.600 1996.000 75.800 ;
+        RECT 4.400 45.200 1995.600 46.600 ;
+        RECT 4.000 16.000 1996.000 45.200 ;
+        RECT 4.400 14.600 1995.600 16.000 ;
+        RECT 4.000 10.715 1996.000 14.600 ;
+  END
+END core
+END LIBRARY
+
